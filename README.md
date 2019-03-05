@@ -5,7 +5,7 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 
 # To Do:
 
-                                              ## Data Preprocessing
+<h1><center> Data Preprocessing </center></h1>
 ### Download atbats.csv, pull necessary variables, and merge with pitches.csv
 ab_id is the by/join variable to merge the csvs by
 Pull ab_id, batter_id, inning, p_score, p_throws, pitcher_id, stand, top
