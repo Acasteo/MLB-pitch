@@ -17,6 +17,8 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 ### (DONE) pitch_type:
 (DONE) Remove Unknown (UN) and Eephus (EP) 
 (DONE) Combine FO and PO
+(DONE) Remove AB and FA because each have 9 observations
+(DONE) Remove SC because screwballs are not frequent
 
 ### (DONE) Dummy encode:
 (DONE) pitch_type (consider combining similar types of pitches into single encoding)
