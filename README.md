@@ -24,14 +24,13 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 (DONE) pitch_type (consider combining similar types of pitches into single encoding)
 
 ### Feature Engineering:
-Construct a single column (count_status) out of b_count, s_count (0=0-0, 1=1-0, 2=0-1, 3=1-1, 4=2-0, 5=0-2, 6=3-0, 7=2-1, 8=1-2, 9=3-1, 10=2-2, 11=3-2)
+(DONE) Construct a single column (count_status) out of b_count, s_count (0=0-0, 1=1-0, 2=0-1, 3=1-1, 4=2-0, 5=0-2, 6=3-0, 7=2-1, 8=1-2, 9=3-1, 10=2-2, 11=3-2)
 (DONE) Create variable (score_differnce) which is defined by b_score minus p_score
-Construct a single column (base_status) out of on_1b, on_2b, on_3b (0 = no one on base, 1 = 1st, 2 = 2nd, 3 = rd, 4 = 1st and second, ... , 7 = bases loaded)
+(DONE) Construct a single column (base_status) out of on_1b, on_2b, on_3b (0 = no one on base, 1 = 1st, 2 = 2nd, 3 = rd, 4 = 1st and second, ... , 7 = bases loaded)
 
 ### Bin the following variables:
-score_difference: -5=(-25,-5), 5=(5,25), -4 through 4 don't get binned
-pitch_num: 0=(1,6) 1=(7,21)
-pitch_type: PO=(FO, PO) So just rename FO as PO
+(DONE) score_difference: -5=(-25,-5), 5=(5,25), -4 through 4 don't get binned
+(DONE) pitch_num: 0=(1,6) 1=(7,21)
 
 ### (DONE) Outlier Removal
 (DONE) Remove all observations with Unknown (UN) and Eephus (EP) in the pitch_type column
