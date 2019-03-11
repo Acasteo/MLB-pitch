@@ -35,9 +35,9 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 ### (DONE) Outlier Removal
 (DONE) Remove all observations with Unknown (UN) and Eephus (EP) in the pitch_type column
 
-# Now that preprocessing is complete, models should be constructed based on the preprocessed data. In order to work faster, we will create new .ipynb for different models so that people can work on separate tasks. Once completed, code will be uploaded to the master file. 
+# Construct new models in separate files and eventually we'll add everything to master file. To do this duplicate the preprocessed file, rename, and start at the end.
 
-# The preprocessed data can be downloaded here: https://drive.google.com/file/d/1KHFvfbEOcqjxqP6r1Wr7QRsQBJRMdr9v/view?usp=sharing
+# Adjusted data by removing last pitch of each at_bat so that our models are predicting the next pitch (we are never predicting the first pitch
 
 ## Data Splitting/Sampling
 5-fold CV
@@ -52,3 +52,14 @@ PCA graph
 ## Base Model
 Regression Model (Needs to be basic as stated in directions):
 use pitcher_id and count_status
+
+## Multinomial logistic regression
+
+## Gradient-boosted tree regression
+
+## Multilayer perceptron classifier (Feedforward Artificial Neural Network)
+Build model (DONE)
+Hyperparameter tuning, in this case it is amount of hidden layers
+Test performance; currently only looking at accuracy (DONE)
+
+
