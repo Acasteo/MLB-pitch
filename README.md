@@ -5,7 +5,7 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 
 # To Do:
 
-## Data Preprocessing
+## (DONE) Data Preprocessing
 
 ### (DONE) Download atbats.csv, pull necessary variables, and merge with pitches.csv
 (DONE) ab_id is the by/join variable to merge the csvs by
@@ -23,17 +23,21 @@ The goal of this analysis is to predict pitch type based on previous pitches thr
 ### (DONE) Dummy encode:
 (DONE) pitch_type (consider combining similar types of pitches into single encoding)
 
-### Feature Engineering:
+### (DONE) Feature Engineering:
 (DONE) Construct a single column (count_status) out of b_count, s_count (0=0-0, 1=1-0, 2=0-1, 3=1-1, 4=2-0, 5=0-2, 6=3-0, 7=2-1, 8=1-2, 9=3-1, 10=2-2, 11=3-2)
 (DONE) Create variable (score_differnce) which is defined by b_score minus p_score
 (DONE) Construct a single column (base_status) out of on_1b, on_2b, on_3b (0 = no one on base, 1 = 1st, 2 = 2nd, 3 = rd, 4 = 1st and second, ... , 7 = bases loaded)
 
-### Bin the following variables:
+### (DONE) Bin the following variables:
 (DONE) score_difference: -5=(-25,-5), 5=(5,25), -4 through 4 don't get binned
 (DONE) pitch_num: 0=(1,6) 1=(7,21)
 
 ### (DONE) Outlier Removal
 (DONE) Remove all observations with Unknown (UN) and Eephus (EP) in the pitch_type column
+
+# Now that preprocessing is complete, models should be constructed based on the preprocessed data. In order to work faster, we will create new .ipynb for different models so that people can work on separate tasks. Once completed, code will be uploaded to the master file. 
+
+# The preprocessed data can be downloaded here: https://drive.google.com/file/d/1KHFvfbEOcqjxqP6r1Wr7QRsQBJRMdr9v/view?usp=sharing
 
 ## Data Splitting/Sampling
 5-fold CV
@@ -41,8 +45,8 @@ No sampling
 Split Data into train and test (80%/20% split)
 
 ## Exploratory Analysis (at least 2 graphs)
-Pie graph breakdown of pitch types (overall)
-Pie graph breakdown of pitch types (2 individual pitchers as a case study)
+(DONE) Pie graph breakdown of pitch types (overall)
+(DONE) Pie graph breakdown of pitch types (2 individual pitchers as a case study)
 PCA graph
 
 ## Base Model
